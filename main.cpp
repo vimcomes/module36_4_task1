@@ -18,10 +18,10 @@ public:
     {
         setParent(parent);
         //
-        turquoiseCircle = QPixmap("../images/turquoise.png");
-        greenCircle = QPixmap("../images/green.png");
-        yellowCircle = QPixmap("../images/yellow.png");
-        redCircle = QPixmap("../images/red.png");
+        turquoiseCircle = QPixmap("./images/turquoise.png");
+        greenCircle = QPixmap("./images/green.png");
+        yellowCircle = QPixmap("./images/yellow.png");
+        redCircle = QPixmap("./images/red.png");
         currentCircle = turquoiseCircle;
     }
 
