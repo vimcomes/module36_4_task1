@@ -17,11 +17,11 @@ public:
     explicit ImageCircle(QWidget *parent)
     {
         setParent(parent);
-        //my wife asked me to add a turquoise color ;)
-        turquoiseCircle = QPixmap("..\\turquoise.png");
-        greenCircle = QPixmap("..\\green.png");
-        yellowCircle = QPixmap("..\\yellow.png");
-        redCircle = QPixmap("..\\red.png");
+        //
+        turquoiseCircle = QPixmap("../images/turquoise.png");
+        greenCircle = QPixmap("../images/green.png");
+        yellowCircle = QPixmap("../images/yellow.png");
+        redCircle = QPixmap("../images/red.png");
         currentCircle = turquoiseCircle;
     }
 

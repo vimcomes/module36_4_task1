@@ -1,14 +1,17 @@
 cmake_minimum_required(VERSION 3.23)
-project(module36_4_task1)
+project(QTCircleDemo)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+#set your path to QT cmake dir
 set(CMAKE_PREFIX_PATH "F:/Qt/5.15.2/mingw81_64/lib/cmake")
+
 
 find_package(Qt5 COMPONENTS
         Core
@@ -16,11 +19,15 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(module36_4_task1 main.cpp)
-target_link_libraries(module36_4_task1
+add_executable(QTCircleDemo main.cpp)
+target_link_libraries(QTCircleDemo
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets
+        )
+set_target_properties(QTCircleDemo
+        PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}"/bin/"
         )
 
 if (WIN32)
